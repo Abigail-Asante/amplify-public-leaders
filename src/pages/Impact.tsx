@@ -8,22 +8,22 @@ const Impact = () => {
   const successStories = [
     {
       title: "Digital Transformation in Education",
-      country: "Kenya",
-      fellow: "Dr. Sarah Kamau",
+      country: "Ghana",
+      fellow: "Ama",
       description: "Led the implementation of a nationwide e-learning platform reaching 2.5 million students across rural and urban areas, significantly improving access to quality education.",
       impact: "2.5M students reached",
     },
     {
       title: "Healthcare System Reform",
       country: "Ghana",
-      fellow: "Kwame Mensah",
+      fellow: "Kwame",
       description: "Designed and implemented a community health worker program that reduced maternal mortality by 35% in underserved regions through improved prenatal care access.",
       impact: "35% reduction in maternal mortality",
     },
     {
       title: "Public Procurement Transparency",
-      country: "Nigeria",
-      fellow: "Amara Okafor",
+      country: "Ghana",
+      fellow: "Ama",
       description: "Developed an open data platform for government contracts that increased transparency and saved $45M in public funds through competitive bidding improvements.",
       impact: "$45M saved in public funds",
     },
@@ -31,27 +31,27 @@ const Impact = () => {
 
   const governmentPartners = [
     {
-      country: "Kenya",
+      region: "Greater Accra",
       initiatives: "15 active policy initiatives",
       fellows: "142 Fellows placed",
     },
     {
-      country: "Ghana",
+      region: "Ashanti Region",
       initiatives: "12 active policy initiatives",
       fellows: "98 Fellows placed",
     },
     {
-      country: "Nigeria",
+      region: "Western",
       initiatives: "22 active policy initiatives",
       fellows: "186 Fellows placed",
     },
     {
-      country: "Rwanda",
+      region: "Eastern",
       initiatives: "8 active policy initiatives",
       fellows: "64 Fellows placed",
     },
     {
-      country: "Tanzania",
+      region: "Northern",
       initiatives: "6 active policy initiatives",
       fellows: "44 Fellows placed",
     },
@@ -168,14 +168,14 @@ const Impact = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Partner Governments</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Collaborative partnerships driving public sector excellence across Africa
+                Collaborative partnerships driving public sector excellence across the country
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {governmentPartners.map((partner, index) => (
                 <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                  <h3 className="text-2xl font-bold text-primary mb-4">{partner.country}</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-4">{partner.region}</h3>
                   <div className="space-y-2">
                     <p className="text-sm text-muted-foreground">{partner.initiatives}</p>
                     <p className="text-sm font-semibold text-accent">{partner.fellows}</p>

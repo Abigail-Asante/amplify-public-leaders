@@ -2,26 +2,27 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Heart, Users } from "lucide-react";
+import { motion } from "framer-motion";
 
 const About = () => {
   const team = [
     {
-      name: "Dr. Adebayo Oluwaseun",
+      name: "Prof. Ama",
       role: "Executive Director",
       bio: "Former Deputy Minister with 20+ years in public sector development across Africa",
     },
     {
-      name: "Prof. Chinwe Eze",
+      name: "Prof. Liz",
       role: "Director of Programs",
       bio: "Leading academic in public policy with expertise in governance and institutional reform",
     },
     {
-      name: "James Mwangi",
+      name: "EPL",
       role: "Director of Partnerships",
       bio: "Extensive experience building strategic partnerships with African governments and institutions",
     },
     {
-      name: "Fatima Hassan",
+      name: "EPL",
       role: "Director of Fellows Development",
       bio: "Expert in leadership development and mentorship programs for emerging leaders",
     },
@@ -70,21 +71,33 @@ const About = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              <Card className="p-8">
-                <Target className="text-primary w-12 h-12 mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  To identify, develop, and support the next generation of transformational public sector leaders across Africa through world-class professional development, mentorship, and strategic placement in government institutions.
-                </p>
-              </Card>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: "spring", stiffness: 200, damping: 10 }}
+              >
+                <Card className="p-8 hover:shadow-2xl transition-all duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <Target className="text-primary w-12 h-12 mb-4" />
+                    <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+                  </div>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    To identify, develop, and support the next generation of transformational public sector leaders across Africa through world-class professional development, mentorship, and strategic placement in government institutions.
+                  </p>
+                </Card>
+                </motion.div>
 
-              <Card className="p-8">
-                <Eye className="text-accent w-12 h-12 mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  An Africa where exceptional, ethical, and innovative public sector leaders drive sustainable development, effective governance, and improved quality of life for all citizens across the continent.
-                </p>
-              </Card>
+                <Card className="p-8 hover:shadow-2xl transition-all duration-300">
+                  <div className="flex flex-col items-center text-center">
+                    <Eye className="text-accent w-12 h-12 mb-4" />
+                    <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+                  </div>
+
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    An Africa where exceptional, ethical, and innovative public sector leaders drive sustainable development, effective governance, and improved quality of life for all citizens across the continent.
+                  </p>
+                </Card>
+              
             </div>
           </div>
         </section>

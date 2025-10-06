@@ -4,21 +4,27 @@ import { Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Amara Okafor",
-      role: "Senior Policy Advisor, Ministry of Education",
-      country: "Nigeria",
+      name: "Abigail Asante",
+      role: "President",
+      country: "Ghana",
       quote: "The EPL Fellowship transformed my approach to public service. The practical skills and network I gained have been invaluable in driving meaningful policy reforms.",
     },
     {
-      name: "Kwame Mensah",
+      name: "Miriam ",
       role: "Director of Public Affairs",
       country: "Ghana",
       quote: "EPL provided me with the tools to bridge the gap between policy and implementation. The mentorship from senior leaders was exceptional.",
     },
     {
-      name: "Dr. Sarah Kamau",
+      name: "Anita Elorm",
       role: "Deputy Minister, Health Department",
-      country: "Kenya",
+      country: "Ghana",
+      quote: "Through EPL, I connected with peers across Africa facing similar challenges. This network continues to be a source of innovation and support.",
+    },
+     {
+      name: "Priscilla Elorm",
+      role: " Minister, Finance Department",
+      country: "Ghana",
       quote: "Through EPL, I connected with peers across Africa facing similar challenges. This network continues to be a source of innovation and support.",
     },
   ];

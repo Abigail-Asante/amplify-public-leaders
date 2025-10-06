@@ -1,13 +1,13 @@
 const Partners = () => {
   const partners = [
-    "African Union",
-    "World Bank",
-    "UNDP",
+    "Public Service Commission",
+    "Mastercard Foundation",
+    "Civil Service",
     "African Development Bank",
-    "Government of Kenya",
+    "EPL",
     "Government of Ghana",
-    "Government of Nigeria",
-    "Government of Rwanda",
+    "Ghana",
+    "Ghana",
   ];
 
   return (

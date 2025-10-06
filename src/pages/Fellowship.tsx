@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { CheckCircle, Calendar, Users, Award, Target } from "lucide-react";
 import fellowshipImage from "@/assets/fellowship-training.jpg";
 
@@ -76,7 +77,7 @@ const Fellowship = () => {
       <main>
         {/* Hero Section */}
         <section className="relative pt-24 pb-20 overflow-hidden">
-          <div 
+          <div
             className="absolute inset-0 z-0"
             style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${fellowshipImage})`,
@@ -91,9 +92,11 @@ const Fellowship = () => {
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
               A comprehensive 12-month program designed to develop the next generation of transformational public sector leaders in Africa
             </p>
-            <Button variant="hero" size="lg">
-              Apply Now - Opens February 2026
-            </Button>
+            <Link to="/register-interest">
+              <Button variant="hero" size="lg">
+                Apply Now – Opens February 2026
+              </Button>
+            </Link>
           </div>
         </section>
 
@@ -175,9 +178,11 @@ const Fellowship = () => {
             </div>
 
             <div className="text-center mt-12">
-              <Button variant="hero" size="lg">
-                Start Your Application
-              </Button>
+              <Link to="/register-interest">
+                <Button variant="hero" size="lg">
+                  Start Your Application
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
